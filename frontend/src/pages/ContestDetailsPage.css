@@ -1,0 +1,141 @@
+.contest-details-page {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+
+.contest-details-card {
+  width: 100%;
+  max-width: 1000px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-card);
+  border-radius: 24px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-card);
+}
+
+/* ================= TITLE ================= */
+
+.contest-details-card h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 40px;
+}
+
+.contest-timer {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 18px;
+  background: var(--bg-card);
+  color: var(--primary-color);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+}
+
+/* ================= DESCRIPTION ================= */
+
+.contest-description {
+  margin-top: 18px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ================= DATES ================= */
+
+.contest-dates {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-secondary);
+}
+
+/* ================= PROBLEMS ================= */
+
+.contest-problems {
+  margin-top: 40px;
+}
+
+.contest-problems h2 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+/* ================= PROBLEM LIST ================= */
+
+.contest-problem-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ================= PROBLEM CARD ================= */
+
+.contest-problem-card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.contest-problem-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  background: var(--bg-hover);
+}
+
+/* ================= PROBLEM TITLE ================= */
+
+.contest-problem-card h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+/* ================= DIFFICULTY ================= */
+
+.contest-problem-card .difficulty {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contest-problem-card .easy {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--success-color);
+}
+
+.contest-problem-card .medium {
+  background: rgba(234, 179, 8, 0.15);
+  color: var(--warning-color);
+}
+
+.contest-problem-card .hard {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger-color);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contest-details-card {
+    padding: 28px 20px;
+  }
+
+  .contest-details-card h1 {
+    font-size: 32px;
+  }
+}

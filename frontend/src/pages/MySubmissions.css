@@ -1,0 +1,50 @@
+.page-container {
+  padding: 40px;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+}
+
+.page-container h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: var(--text-primary);
+}
+
+.submission-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.submission-table thead {
+  background-color: var(--bg-card);
+}
+
+.submission-table th {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.submission-table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.submission-table tr:hover {
+  background-color: var(--bg-hover);
+  transition: var(--transition-fast);
+}
+
+.submission-table td:nth-child(3) {
+  color: var(--success-color);
+  font-weight: bold;
+}

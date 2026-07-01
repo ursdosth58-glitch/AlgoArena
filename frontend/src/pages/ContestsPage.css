@@ -1,0 +1,96 @@
+.contests-page {
+  min-height: 100vh;
+  padding: 100px 60px 40px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+
+.contests-header {
+  margin-bottom: 40px;
+}
+
+.contests-header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ================= GRID ================= */
+
+.contests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ================= LINK ================= */
+
+.contest-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= CARD ================= */
+
+.contest-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition-fast);
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contest-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-color);
+  background: var(--bg-hover);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ================= TITLE ================= */
+
+.contest-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+/* ================= DESCRIPTION ================= */
+
+.contest-card p {
+  margin-top: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ================= TIME ================= */
+
+.contest-time {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contests-page {
+    padding: 90px 20px 30px;
+  }
+
+  .contests-header h1 {
+    font-size: 34px;
+  }
+}
